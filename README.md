@@ -9,7 +9,9 @@ To write a program to predict the profit of a city using the linear regression m
 
 ## Algorithm
 1.Import necessary libraries including NumPy, Pandas, and StandardScaler from sklearn.
+
 2.Define a function linear_regression which takes input features (X1), target variable (y), learning rate (default value is 0.1), and number of iterations (default value is 1000). This function implements gradient descent to find the optimal parameters for the linear regression model.
+
 3.Read the startup data from the CSV file into a DataFrame using Pandas.
 4.Extract the feature matrix (X) and target variable (y) from the DataFrame. Convert X into a NumPy array and ensure it's of float data type. Also, scale both X and y using StandardScaler.
 5.Call the linear_regression function with the scaled feature matrix (X1_Scaled) and target variable (Y1_Scaled) to obtain the optimal parameters (theta).
