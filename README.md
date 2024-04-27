@@ -26,9 +26,12 @@ To write a program to predict the profit of a city using the linear regression m
 ## Program:
 ```
 /*
+
 Program to implement the linear regression using gradient descent.
 Developed by: AADITHYA.R
 RegisterNumber:212223240001
+
+
 
 import numpy as np
 import pandas as pd
@@ -63,12 +66,6 @@ print(f"Predicted value:{pre}")
 ```
 
 ## Output:
-
-![3,1](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/4aaf2aff-40c1-403e-89d8-89a91f5a5cf4)
-![3,2](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/36bd2e0e-e7f0-4b27-b85e-848c05a7557b)
-![3,3](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/543ecbe1-b43e-4495-bd80-6af1d6f6b5da)
-![3,4](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/39faa3d5-869b-41fc-a883-affdf8b31891)
-![3,5](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/d49e0739-426b-44a8-9b69-cd4adb1bfaee)
 ![3,6](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/5eb6a538-c1fb-4ba9-ac56-41bbc8a10835)
 
 ## Result:
