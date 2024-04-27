@@ -57,7 +57,20 @@ print(f"Predicted value:{pre}")
 ``
 
 ## Output:
-![3,6](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/5eb6a538-c1fb-4ba9-ac56-41bbc8a10835)
+### X values
+![1](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/55bc31fd-058c-4280-a517-59e2b5a0558d)
+
+### y values
+![2](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/dc4a6c03-2b79-43aa-aedc-e59359c995eb)
+
+### X Scaled values
+![3](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/e003aee6-9788-4d4a-b11c-4ea550f7ff82)
+
+### y Scaled values
+![4](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/6ef0aa5b-dd8f-4130-8236-00a85e89a2c4)
+
+### Predicted value
+![5](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/df7d01e2-791f-4171-a9d9-d9449f7cde1f)
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
