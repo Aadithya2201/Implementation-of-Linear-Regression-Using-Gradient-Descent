@@ -8,31 +8,22 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Import necessary libraries including NumPy, Pandas, and StandardScaler from sklearn.
 
-2.Define a function linear_regression which takes input features (X1), target variable (y), learning rate (default value is 0.1), and number of iterations (default value is 1000). This function implements gradient descent to find the optimal parameters for the linear regression model.
+1. Import the required library and read the dataframe.
+2. Write a function computeCost to generate the cost function.
+3. Perform iterations og gradient steps with learning rate.
+4. Plot the Cost function using Gradient Descent and generate the required graph.
 
-3.Read the startup data from the CSV file into a DataFrame using Pandas.
 
-4.Extract the feature matrix (X) and target variable (y) from the DataFrame. Convert X into a NumPy array and ensure it's of float data type. Also, scale both X and y using StandardScaler.
-
-5.Call the linear_regression function with the scaled feature matrix (X1_Scaled) and target variable (Y1_Scaled) to obtain the optimal parameters (theta).
-
-6.Create a new data point (new_data) and scale it using the same scaler used for the training data. Then, predict the profit for this new data point using the learned parameters (theta).
-
-7.Inverse transform the predicted profit to get the original scale using the same scaler used for scaling the target variable.
-
-8.Print the predicted profit.
 ## Program:
 ```
 /*
-
 Program to implement the linear regression using gradient descent.
-Developed by: AADITHYA.R
-RegisterNumber:212223240001
-
-
-
+Developed by: AADITHYA R
+RegisterNumber:  212223240001
+*/
+```
+```
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -44,7 +35,7 @@ def linear_regression(X1,y,learning_rate=0.1,num_iters=1000):
         errors=(predictions-y).reshape(-1,1)
         theta-=learning_rate*(1/len(X1))*X.T.dot(errors)
     return theta
-data=pd.read_csv("C:/Users/admin/Downloads/AADITHYA/50_Startups.csv")
+data=pd.read_csv("C:/Users/admin/Downloads/VARSHINI/50_Startups.csv")
 data.head()
 X = (data.iloc[1:,:-2].values)
 X1 =X.astype(float)
@@ -62,8 +53,8 @@ prediction= prediction.reshape(-1,1)
 pre = scaler.inverse_transform(prediction)
 print(prediction)
 print(f"Predicted value:{pre}")
-*/
 ```
+``
 
 ## Output:
 ![3,6](https://github.com/Aadithya2201/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/145917810/5eb6a538-c1fb-4ba9-ac56-41bbc8a10835)
