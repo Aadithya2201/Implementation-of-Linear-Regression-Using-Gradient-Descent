@@ -37,6 +37,8 @@ data=pd.read_csv("C:/Users/admin/Downloads/VARSHINI/50_Startups.csv")
 data.head()
 ```
 ```
+
+
 X = (data.iloc[1:,:-2].values)
 X1 =X.astype(float)
 scaler = StandardScaler()
