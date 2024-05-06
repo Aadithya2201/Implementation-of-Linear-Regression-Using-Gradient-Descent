@@ -22,8 +22,7 @@ Program to implement the linear regression using gradient descent.
 Developed by: AADITHYA R
 RegisterNumber:  212223240001
 */
-```
-```
+
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -40,6 +39,8 @@ data.head()
 X = (data.iloc[1:,:-2].values)
 X1 =X.astype(float)
 scaler = StandardScaler()
+```
+```
 y = (data.iloc[1:,-1].values).reshape(-1,1)
 X1_Scaled = scaler.fit_transform(X1)
 Y1_Scaled = scaler.fit_transform(y)
@@ -54,7 +55,6 @@ pre = scaler.inverse_transform(prediction)
 print(prediction)
 print(f"Predicted value:{pre}")
 ```
-``
 
 ## Output:
 ### X values
