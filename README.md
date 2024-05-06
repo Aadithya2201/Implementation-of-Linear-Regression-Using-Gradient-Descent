@@ -22,7 +22,6 @@ Program to implement the linear regression using gradient descent.
 Developed by: AADITHYA R
 RegisterNumber:  212223240001
 */
-
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -36,11 +35,11 @@ def linear_regression(X1,y,learning_rate=0.1,num_iters=1000):
     return theta
 data=pd.read_csv("C:/Users/admin/Downloads/VARSHINI/50_Startups.csv")
 data.head()
+```
+```
 X = (data.iloc[1:,:-2].values)
 X1 =X.astype(float)
 scaler = StandardScaler()
-```
-```
 y = (data.iloc[1:,-1].values).reshape(-1,1)
 X1_Scaled = scaler.fit_transform(X1)
 Y1_Scaled = scaler.fit_transform(y)
