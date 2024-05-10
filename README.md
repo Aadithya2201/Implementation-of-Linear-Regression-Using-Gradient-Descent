@@ -10,10 +10,15 @@ To write a program to predict the profit of a city using the linear regression m
 ## Algorithm
 
 Step 1.Start.
+
 Step 2. Import the required library and read the dataframe.
+
 Step 3. Write a function computeCost to generate the cost function.
+
 Step 4. Perform iterations og gradient steps with learning rate.
+
 Step 5. Plot the Cost function using Gradient Descent and generate the required graph.
+
 Step 6.End.
 
 ## Program:
@@ -29,6 +34,10 @@ from sklearn.preprocessing import StandardScaler
 def linear_regression(X1,y,learning_rate=0.1,num_iters=1000):
     X = np.c_[np.ones(len(X1)),X1]
     theta = np.zeros(X.shape[1]).reshape(-1,1)
+```
+```
+
+
     for _ in range(num_iters):
         predictions = (X).dot(theta).reshape(-1,1)
         errors=(predictions-y).reshape(-1,1)
@@ -36,10 +45,6 @@ def linear_regression(X1,y,learning_rate=0.1,num_iters=1000):
     return theta
 data=pd.read_csv("C:/Users/admin/Downloads/VARSHINI/50_Startups.csv")
 data.head()
-```
-```
-
-
 X = (data.iloc[1:,:-2].values)
 X1 =X.astype(float)
 scaler = StandardScaler()
