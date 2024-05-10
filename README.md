@@ -34,15 +34,13 @@ from sklearn.preprocessing import StandardScaler
 def linear_regression(X1,y,learning_rate=0.1,num_iters=1000):
     X = np.c_[np.ones(len(X1)),X1]
     theta = np.zeros(X.shape[1]).reshape(-1,1)
-```
-```
-
-
-    for _ in range(num_iters):
+ for _ in range(num_iters):
         predictions = (X).dot(theta).reshape(-1,1)
         errors=(predictions-y).reshape(-1,1)
         theta-=learning_rate*(1/len(X1))*X.T.dot(errors)
     return theta
+```
+```
 data=pd.read_csv("C:/Users/admin/Downloads/VARSHINI/50_Startups.csv")
 data.head()
 X = (data.iloc[1:,:-2].values)
